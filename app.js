@@ -80,16 +80,6 @@ app.use((req,res,next)=>{
     next();
 })
 
-// app.get("/demouser",async(req,res)=>{
-//     let fakeUser = new User({
-//         email: "student@gmail.com",
-//         username: "delta-student"
-//     });
-
-//     let registeredUser = await User.register(fakeUser,"helloworld"); //register(user,password,callback) or automatically check krega ki jo username hum select krre h voh unique h ki nhi
-//     res.send(registeredUser);
-// })
-
 app.use("/listings", listingRouter);
 app.use("/listings/:id/reviews", reviewRouter);
 app.use("/",userRouter);
