@@ -18,8 +18,7 @@ const passport = require("passport");
 const listingRouter = require("./routes/listing.js");
 const reviewRouter = require("./routes/review.js");
 const userRouter = require("./routes/user.js");
-
-const MONGO_URL = process.env.MONGO_URL;
+const MONGO_URL = ("mongodb+srv://Ankit:7290921543@wanderlust.akqq6.mongodb.net/?retryWrites=true&w=majority&appName=WanderLust");
 
 main()
     .then(() => {
